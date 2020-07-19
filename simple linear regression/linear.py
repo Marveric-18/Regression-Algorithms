@@ -105,7 +105,7 @@ print(new_slope, new_constant)
 #plotting the line and scatter graph
 def graph(formula, x_range):  
     x = np.array(x_range)  
-    y = formula(x)  
+    y = linear_formula(new_slope, new_constant, x)  
     plt.plot(x, y)  
 
 plt.scatter(x, y, c="red", alpha=0.5)
